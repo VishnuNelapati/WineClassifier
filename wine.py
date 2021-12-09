@@ -672,7 +672,7 @@ It is Statistical procedure to convert observations of possibly correlated varia
             loaded_model = joblib.load('adaboostclassifier-Imbalance.pkl')
             model_output = "Red" if loaded_model.predict(input)==0 else 'White'
             si = 1 if model_output ==  np.array(dis.Type)[0] else -1
-            st.metric('AdBoost Regression',model_output,si)
+            st.metric('AdaBoost Classifier',model_output,si)
         with m7:
             loaded_model = joblib.load('gradientboostingclassifier-Imbalance.pkl')
             model_output = "Red" if loaded_model.predict(input)==0 else 'White'
@@ -1120,7 +1120,7 @@ Pipelines are valuable for cleaning up machine learning code and avoiding errors
             loaded_model = joblib.load('adaboostclassifierQ-Imbalance.pkl')
             model_output = "High" if loaded_model.predict(input)==0 else ("Low" if loaded_model.predict(input)==1 else 'Medium')
             si = 1 if model_output ==  np.array(dis.discrete_quality)[0] else -1
-            st.metric('AdBoost Regression',model_output,si)
+            st.metric('AdaBoost Classifier',model_output,si)
         with m7:
             loaded_model = joblib.load('gradientboostingclassifierQ-Imbalance.pkl')
             model_output = "High" if loaded_model.predict(input)==0 else ("Low" if loaded_model.predict(input)==1 else 'Medium')
