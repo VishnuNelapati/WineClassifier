@@ -66,7 +66,7 @@ st.set_page_config(
      }
  )
 st.sidebar.header("Hello There ")
-menubar = st.sidebar.radio("",['Overview','Exploratory Data Analysis','Classification Model - Type','Classification Model - Quality','Playground','About Us'])
+menubar = st.sidebar.radio("",['Overview','Exploratory Data Analysis','Classification Model - Type','Classification Model - Quality','About Us'])
 
 @st.cache(allow_output_mutation=True)
 def inputdata():
