@@ -160,7 +160,7 @@ if menubar == 'Overview':
            with c4:
                fig1 = ex.histogram(wine, x=i, color="discrete_quality", marginal="box",
                       hover_data=wine.columns)
-               fig1.update_layout(title =f"Distribution of {i} by Type of Wine",title_x = 0.5,height = 400,width = 650)
+               fig1.update_layout(title =f"Distribution of {i} by Quality of Wine",title_x = 0.5,height = 400,width = 650)
                st.plotly_chart(fig1,se_container_width=True)
 
            with c2:
