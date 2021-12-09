@@ -116,7 +116,7 @@ def cleaneddata():
 
 
 if menubar == 'Overview':
-    st.markdown("<h1 style='text-align: center; color: Black;'>Wine Classifier</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: Black;'>Wine Classifier - Type And Quality</h1>", unsafe_allow_html=True)
     wine = inputdata().copy()
     wine['discrete_quality'] = wine.quality.apply(lambda x : 'Low' if x<=5 else ('High' if x>7 else 'Medium') )
     st.dataframe(wine)
@@ -125,7 +125,7 @@ if menubar == 'Overview':
     wine = wine.dropna()
     wine.drop_duplicates(subset=wine.columns,keep='first',inplace=True)
 
-    st.markdown("<h4 style='text-align: left; color: Black;'>Description of the data an columns </h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: left; color: Black;'>Description of the data and columns </h4>", unsafe_allow_html=True)
 
 
     # def report():
