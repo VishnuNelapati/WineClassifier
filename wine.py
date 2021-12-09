@@ -623,6 +623,8 @@ It is Statistical procedure to convert observations of possibly correlated varia
 
     st.markdown(" ## Models Evaluation")
 
+    st.write('Test Data')
+
     ind = np.random.randint(10,len(X_test)-10)
     input = X_test.iloc[ind:ind+1,:]
     # st.write(input)
@@ -1068,6 +1070,8 @@ Pipelines are valuable for cleaning up machine learning code and avoiding errors
 
     st.markdown(" ## Models Evaluation")
 
+    st.write('Test Data')
+
     ind = np.random.randint(10,len(X_test)-10)
     input = X_test.iloc[ind:ind+1,:]
     # st.write(input)
@@ -1086,6 +1090,7 @@ Pipelines are valuable for cleaning up machine learning code and avoiding errors
     # model_output = "High" if loaded_model.predict(input)==0 else ("Low" if loaded_model.predict(input)==1 else 'Medium')
     # si = 1 if model_output ==  np.array(dis.discrete_quality)[0] else -1
 
+    
     m1,m2,m3,m4,m5,m6,m7 = st.columns((1,1,1,1,1,1,1))
 
     if pred:
